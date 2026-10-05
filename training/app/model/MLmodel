@@ -1,0 +1,30 @@
+artifact_path: /Users/allurijairam/Desktop/Code_FRF/Kubernetes /training/mlruns/1/models/m-1bcfc18caffb40de9637e06d16848e84/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.skops
+    predict_fn: predict
+    python_version: 3.12.14
+  sklearn:
+    code: null
+    pickled_model: model.skops
+    serialization_format: skops
+    sklearn_version: 1.9.1
+    skops_trusted_types:
+    - sklearn.tree._tree.Tree
+is_signature_from_type_hint: false
+mlflow_version: 3.16.1
+model_id: m-1bcfc18caffb40de9637e06d16848e84
+model_size_bytes: 154010
+model_uuid: m-1bcfc18caffb40de9637e06d16848e84
+prompts: null
+run_id: 92615538c5d4400fa9686d585b2dd651
+signature:
+  inputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1, 4]}}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-10-03 21:37:53.857706'
