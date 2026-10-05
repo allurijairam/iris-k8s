@@ -1,7 +1,25 @@
-.venv/
+# Python
 __pycache__/
-*.py[cod]
-.DS_Store
+*.pyc
+.venv/
+venv/
 .ipynb_checkpoints/
-training/mlflow.db
-training/mlruns/
+
+# MLflow and model artifacts (models live in the image/registry, not Git)
+mlruns/
+mlartifacts/
+mlflow.db
+app/model/
+model/
+*.joblib
+*.pkl
+
+# Secrets and keys
+.env
+*.pem
+*.key
+kubeconfig*
+*.yaml.bak
+
+# macOS
+.DS_Store
